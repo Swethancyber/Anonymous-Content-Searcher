@@ -1,0 +1,15 @@
+import pywhatkit as kit
+import time
+
+# Track start time
+start = time.time()
+
+song = input("Enter a song to play on YouTube: ")
+
+print(f"Searching YouTube for '{song}'...")
+kit.playonyt(song)  # Opens the top YouTube result in your browser
+
+# Track end time
+end = time.time()
+
+print(f"Done! Launched in {round(end - start, 2)} seconds.")
